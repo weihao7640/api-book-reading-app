@@ -38,7 +38,7 @@ public class BookEntity {
 	
 	
 	@Column (name="is_actived_book")
-	private Boolean is_actived;
+	private Boolean is_actived_book;
 	
 	
 	@Column (name= "is_hiden_book")
@@ -99,12 +99,12 @@ public class BookEntity {
 		this.id_category = id_category;
 	}
 
-	public Boolean getIs_actived() {
-		return is_actived;
+	public Boolean getIs_actived_book() {
+		return is_actived_book;
 	}
 
-	public void setIs_actived(Boolean is_actived) {
-		this.is_actived = is_actived;
+	public void setIs_actived_book(Boolean is_actived_book) {
+		this.is_actived_book = is_actived_book;
 	}
 
 	public Boolean getIs_hiden_book() {
@@ -148,7 +148,7 @@ public class BookEntity {
 	}
 
 	public BookEntity(int id_book, String name_book, String poster_book, String description_book, int id_category,
-			Boolean is_actived, Boolean is_hiden_book, Boolean is_on_rabit_book, int price_book, Date created_date_book,
+			Boolean is_actived_book, Boolean is_hiden_book, Boolean is_on_rabit_book, int price_book, Date created_date_book,
 			Date updated_date_book) {
 		super();
 		this.id_book = id_book;
@@ -156,7 +156,7 @@ public class BookEntity {
 		this.poster_book = poster_book;
 		this.description_book = description_book;
 		this.id_category = id_category;
-		this.is_actived = is_actived;
+		this.is_actived_book = is_actived_book;
 		this.is_hiden_book = is_hiden_book;
 		this.is_on_rabit_book = is_on_rabit_book;
 		this.price_book = price_book;
