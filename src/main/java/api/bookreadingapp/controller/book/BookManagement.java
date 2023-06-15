@@ -1,4 +1,4 @@
-package api.bookreadingapp.controller.admin;
+package api.bookreadingapp.controller.book;
 
 import java.util.List;
 
@@ -26,5 +26,8 @@ public class BookManagement {
 	public List<BookEntity> getAll(){
 		return book.getAll();
 	}
+	
+	
+	
 	
 }
