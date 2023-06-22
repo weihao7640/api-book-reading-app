@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import api.bookreadingapp.model.BookEntity;
@@ -23,7 +24,7 @@ public class BookManagement {
 		return book.getAll();
 	}
 	@GetMapping("/getallbook")
-	public List<BookEntity> getAll(){
+	public List<BookEntity> getAll(@RequestParam("year") int i){
 		return book.getAll();
 	}
 	

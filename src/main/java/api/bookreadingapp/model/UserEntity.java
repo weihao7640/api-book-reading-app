@@ -38,16 +38,16 @@ public class UserEntity {
 	@Column (name="email_user")
 	private String email_user;
 	
-	@Column (name="is_active_email_user")
+	@Column (name="is_actived_email_user")
 	private Boolean is_active_email_user;
 	
 	@Column (name="phone_user")
 	private String phone_user;
 	
-	@Column (name="is_active_phone_user")
+	@Column (name="is_actived_phone_user")
 	private Boolean is_active_phone_user;
 	
-	@Column (name="is_active_user")
+	@Column (name="is_actived_user")
 	private Boolean is_active_user;
 	
 	@Column (name="is_hiden_user")
@@ -58,6 +58,29 @@ public class UserEntity {
 	
 	@Column (name="updated_date_user")
 	private Date updated_date_user;
+	
+	@Column(name="hash_password")
+	private String hash_password_user;
+	
+	@Column(name="salt")
+	private String salt_user;
+	
+
+	public String getHash_password_user() {
+		return hash_password_user;
+	}
+
+	public void setHash_password_user(String hash_password_user) {
+		this.hash_password_user = hash_password_user;
+	}
+
+	public String getSalt_user() {
+		return salt_user;
+	}
+
+	public void setSalt_user(String salt_user) {
+		this.salt_user = salt_user;
+	}
 
 	public int getId_user() {
 		return id_user;
@@ -174,6 +197,29 @@ public class UserEntity {
 	public UserEntity() {
 		super();
 		// TODO Auto-generated constructor stub
+	}
+
+	public UserEntity(int id_user, String username_user, String fullname_user, Date birthday_user, Boolean gender_user,
+			String avatar_user, String email_user, Boolean is_active_email_user, String phone_user,
+			Boolean is_active_phone_user, Boolean is_active_user, Boolean is_hiden_user, Date created_date_user,
+			Date updated_date_user, String hash_password_user, String salt_user) {
+		super();
+		this.id_user = id_user;
+		this.username_user = username_user;
+		this.fullname_user = fullname_user;
+		this.birthday_user = birthday_user;
+		this.gender_user = gender_user;
+		this.avatar_user = avatar_user;
+		this.email_user = email_user;
+		this.is_active_email_user = is_active_email_user;
+		this.phone_user = phone_user;
+		this.is_active_phone_user = is_active_phone_user;
+		this.is_active_user = is_active_user;
+		this.is_hiden_user = is_hiden_user;
+		this.created_date_user = created_date_user;
+		this.updated_date_user = updated_date_user;
+		this.hash_password_user = hash_password_user;
+		this.salt_user = salt_user;
 	}
 	
 	

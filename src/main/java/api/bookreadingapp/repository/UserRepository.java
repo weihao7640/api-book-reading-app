@@ -19,4 +19,11 @@ public interface UserRepository extends JpaRepository<UserEntity, Integer>{
 	
 	@Query(value="select * from [USERS] inner join [FOLLOW_ACTOR] on USERS.id_user = FOLLOW_ACTOR.id_user where FOLLOW_ACTOR.id_actor=?", nativeQuery = true)
 	public List<UserEntity> getUserFollowActor(int id_actor);
+	
+	
+	
+	
+	
+	
+	
 }
