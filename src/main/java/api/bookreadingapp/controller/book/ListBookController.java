@@ -27,7 +27,7 @@ public class ListBookController {
 	public List<ListBookEntity> getAll(){
 		return listbookservice.getAll();
 	}
-	
+	/*
 	@PostMapping("")
 	public List<ListBookEntity> getUserListBook(@RequestParam("id_user_created_list") int id_user_created_list){
 		return listbookservice.getUserListBook(id_user_created_list);
@@ -37,5 +37,5 @@ public class ListBookController {
 	public List<ListBookEntity> getUserListBookByName(@RequestParam("name_list") String name_list, @RequestParam("id_user_created_list") int id_user_created_list){
 		return listbookservice.getUserListBookByName(name_list,id_user_created_list);
 	}
-	
+	*/
 }
