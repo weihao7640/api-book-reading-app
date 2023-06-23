@@ -38,5 +38,9 @@ public class UserServiceImpl implements UserService {
 		return userRepository.save(user);
 		 //return userEntity;
 	}
+	public UserEntity checkAccount(String username,String hash_pw) {
+		
+		return userRepository.checkAccount(username,hash_pw);
+	}
 }
 

@@ -21,7 +21,8 @@ public interface UserRepository extends JpaRepository<UserEntity, Integer>{
 	public List<UserEntity> getUserFollowActor(int id_actor);
 	
 	
-	
+	@Query(value="select * from [Users] where username_user=?1 and hash_password=?2",nativeQuery = true)
+	public UserEntity checkAccount(String username,String email);
 	
 	
 	
